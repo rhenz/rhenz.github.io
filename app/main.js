@@ -61,17 +61,17 @@ app.controller('projectController', function ($scope) {
   }];
 });
 
-app.controller('ceosilvaController', function ($scope) {
+app.controller('rhenzController', function ($scope) {
   $scope.ceo = {
-    username: 'ceosilvajr',
-    name: 'Ariel Q. Silva Jr.',
-    email: 'ceosilvajr@gmail.com',
-    phone: '+639399080674',
-    fbLink: 'https://www.facebook.com/ceosilvajr',
+    username: 'rhenzsalvador',
+    name: 'John Lawrence Salvador',
+    email: 'salvador.rhenz@gmail.com',
+    phone: '+639152688041',
+    fbLink: 'https://www.facebook.com/jlcsalvador',
     linkedInLink: 'https://www.linkedin.com/in/ceosilvajr',
-    githubLink: 'https://github.com/ceosilvajr',
-    twitterLink: 'https://twitter.com/ceosilvajr',
+    // githubLink: 'https://github.com/rhenz',
+    twitterLink: 'https://twitter.com/rhenzsalvador',
     resumeLink: 'https://drive.google.com/file/d/0B6_jjoXcLdPlRWN2aGFFRmxZV2M/view?usp=sharing',
-    stackLink: 'http://stackoverflow.com/cv/ceosilvajr'
+    stackLink: 'http://stackoverflow.com/users/4518934/rhenz'
   };
 });
