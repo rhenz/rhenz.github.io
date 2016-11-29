@@ -48,7 +48,7 @@ app.controller('projectController', function ($scope) {
     description: 'Biom\' Up application allows the persons who are authorized to use the application to access Biom\' Up products information on their device.',
     image_path: 'images/thumbs/biomup.png',
     link: 'https://itunes.apple.com/us/app/biom-up/id1135365405?mt=8'
-  },
+  }
 
 ];
 });
