@@ -71,7 +71,7 @@ app.controller('rhenzController', function ($scope) {
     linkedInLink: 'https://www.linkedin.com/in/ceosilvajr',
     // githubLink: 'https://github.com/rhenz',
     twitterLink: 'https://twitter.com/rhenzsalvador',
-    resumeLink: 'https://drive.google.com/file/d/0B6_jjoXcLdPlRWN2aGFFRmxZV2M/view?usp=sharing',
+    // resumeLink: 'https://drive.google.com/file/d/0B6_jjoXcLdPlRWN2aGFFRmxZV2M/view?usp=sharing',
     stackLink: 'http://stackoverflow.com/users/4518934/rhenz'
   };
 });
