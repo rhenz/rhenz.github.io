@@ -48,6 +48,30 @@ app.controller('projectController', function ($scope) {
     description: 'Biom\' Up application allows the persons who are authorized to use the application to access Biom\' Up products information on their device.',
     image_path: 'images/thumbs/biomup.png',
     link: 'https://itunes.apple.com/us/app/biom-up/id1135365405?mt=8'
+  },
+  {
+    id: 7,
+    position: '6u 12u$(xsmall) work-item',
+    title: 'Bonafide Infotech',
+    description: 'A basic app that tells you more info about the company of Bonafide Infotech. Apparently this app is not already on app store. Click image for more info.',
+    image_path: 'images/thumbs/bonafide.png',
+    link: 'https://sensortower.com/ios/tr/bonafide-infotech-inc/app/bonafide-infotech-inc/924799024/'
+  },
+  {
+    id: 8,
+    position: '6u 12u$(xsmall) work-item',
+    title: 'WMS Patient Order App',
+    description: 'Given the fast-paced and demanding environment of our referral community, this app allows for quick entry and “on-the-go” transmission of essential catheterization information. For insurance purposes WMS will electronically and privately receive the app-submitted data and assemble a pre-populated prescription form that will be faxed back to you/your office for official physician signature and date. This app is not already on app store. Click image for more info',
+    image_path: 'images/thumbs/wms.png',
+    link: 'https://sensortower.com/ios/us/wilmington-medical-supply-inc/app/wms-patient-order-app/930807108/'
+  },
+  {
+    id: 9,
+    position: '6u 12u$(xsmall) work-item',
+    title: 'SportsAce',
+    description: 'An app for coaches, parents and players which may be used for tracking and recording their scores in every rugby game. This app will allow them to share their activity as well and post a challenge also. It\'s like a social media app for rugby players and enthusiast. *** This app is not yet on app store. Still under development by new devs ***',
+    image_path: 'images/thumbs/sportsace.png',
+    link: 'images/thumbs/sportsaceapp.png'
   }
 
 ];
