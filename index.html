@@ -23,12 +23,12 @@
 <header id="header" ng-controller="rhenzController">
   <a class="image avatar"><img src="images/avatar.jpg" alt=""/></a>
 
-  <h1><strong>{{ceo.name}}</strong></h1>
+  <h1><strong>{{jls.name}}</strong></h1>
 
-  <a class="icon fa-mobile"><span class="label">Phone</span> {{ceo.phone}} </a><br/>
-  <a href="mailto:salvador.rhenz@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span> {{ceo
+  <a class="icon fa-mobile"><span class="label">Phone</span> {{jls.phone}} </a><br/>
+  <a href="mailto:salvador.rhenz@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span> {{jls
     .email}}</a><br/>
-  <a href={{ceo.resumeLink}} class="icon fa-file-pdf-o"><span class="label">Resume</span> Resume </a>
+  <a href={{jls.resumeLink}} class="icon fa-file-pdf-o"><span class="label">Resume</span> Resume </a>
 </header>
 
 <!-- Main -->
@@ -51,7 +51,7 @@
     <header class="major">
       <h2>About me</h2>
     </header>
-    <p>    John Lawrence Salvador, best known as Lawrence, is an iOS Developer. He started as a Software Engineer
+    <p>John Lawrence Salvador, best known as Lawrence, is an iOS Developer. He started as a Software Engineer
       after he graduated Information Systems from University of Santo Tomas last 2012 and has collaborated with a lot
       of talented individual in this industry. He chose to develop iOS Apps first as a hobby and this peaked his interest
        making it part of his career eversince. Young, versatile, and hungry for new knowledge, Lawrence is inspired to
@@ -59,7 +59,7 @@
     <!-- <p>Some of this technologies are Java, Swift, Linux, Docker, Nginx, Node.js, MySQL, NoSQL, REST, JSON, XML,
       Tomcat, Git, Google Guice and Jersey. I also used Android Studio, Eclipse, Xcode, IntelliJ, Slack, Source Tree,
       and Adobe Photo Shop.</p> -->
-      <p>    Knowledgable in technologies like Objective-C, Swift, Java, MySQL, JSON, XML, REST, Git. I use Xcode, Slack, HipChat, Source Tree, Github, Bitbucket,
+      <p> Knowledgable in technologies like Objective-C, Swift, Java, MySQL, JSON, XML, REST, Git. I use Xcode, Slack, HipChat, Source Tree, Github, Bitbucket,
       JIRA, Adobe Photoshop and Adobe Lightroom</p>
   </section>
 </div>
@@ -67,14 +67,13 @@
 <!-- Footer -->
 <footer id="footer" ng-controller="rhenzController">
   <ul class="icons">
-    <li><a href={{ceo.twitterLink}} class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-    <li><a href={{ceo.githubLink}} class="icon fa-github"><span class="label">Github</span></a></li>
-    <li><a href={{ceo.fbLink}} class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-    <li><a href={{ceo.linkedInLink}} class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-    <li><a href={{ceo.stackLink}} class="icon fa-stack-overflow"><span class="label">Linkedin</span></a></li>
+    <li><a href={{jls.twitterLink}} class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    <li><a href={{jls.fbLink}} class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+    <li><a href={{jls.linkedInLink}} class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+    <li><a href={{jls.stackLink}} class="icon fa-stack-overflow"><span class="label">Linkedin</span></a></li>
   </ul>
   <ul class="copyright">
-    <li>&copy; {{ceo.username}}</li>
+    <li>&copy; {{jls.username}}</li>
   </ul>
 </footer>
 
