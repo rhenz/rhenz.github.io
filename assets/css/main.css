@@ -2010,7 +2010,7 @@
 			text-align: center;
 		}
 
-		/* 
+		/*
 		.image.thumb:after {
 				-moz-transition: opacity 0.2s ease-in-out;
 				-webkit-transition: opacity 0.2s ease-in-out;
@@ -2039,7 +2039,7 @@
 				opacity: 1.0;
 			}
 			*/
-				
+
 			.image.thumb:hover:before {
 				background: url("images/overlay.png"), url("images/overlay.png");
 				opacity: 1.0;
@@ -2478,7 +2478,7 @@
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 35%;
+		width: 25%;
 	}
 
 		#header strong, #header b {
@@ -2509,7 +2509,7 @@
 		padding: 0 4em 6em 0;
 		position: fixed;
 		text-align: right;
-		width: 35%;
+		width: 25%;
 	}
 
 		#footer .icons {
