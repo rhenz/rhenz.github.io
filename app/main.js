@@ -72,6 +72,14 @@ app.controller('projectController', function ($scope) {
     description: 'An app for coaches, parents and players which may be used for tracking and recording their scores in every rugby game. This app will allow them to share their activity as well and post a challenge also. It\'s like a social media app for rugby players and enthusiast. *** This app is not yet on app store. Still under development by new devs ***',
     image_path: 'images/thumbs/sportsace.png',
     link: 'images/thumbs/sportsaceapp.png'
+  },
+  {
+    id: 10,
+    position: '6u 12u$(xsmall) work-item',
+    title: 'GMovies',
+    description: 'GMovies is the Philippines\'s only movie ticketing app that aggregates over 100 cinemas nationwide. Book seats & buy movie tickets conveniently for Ayala Malls Cinemas, SM Cinema, Robinsons Movieworld, Theatre Mall & Promenade Greenhills Cinemas, and Cinema 76.',
+    image_path: 'images/thumbs/sportsace.png',
+    link: 'images/thumbs/sportsaceapp.png'
   }
 
 ];
