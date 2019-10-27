@@ -97,7 +97,7 @@ app.controller('profileController', function ($scope) {
     username: 'rhenzsalvador',
     name: 'John Lawrence Salvador',
     email: 'salvador.rhenz@gmail.com',
-    phone: '+639152688041',
+    phone: '+639152688041 / +6588692191',
     fbLink: 'https://www.facebook.com/jlcsalvador',
     linkedInLink: 'https://www.linkedin.com/in/',
     twitterLink: 'https://twitter.com/rhenzsalvador',
