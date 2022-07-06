@@ -30,6 +30,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
   <script type="text/javascript" src="app/main.js"></script>
+  <script src="https://kit.fontawesome.com/b3c6583322.js" crossorigin="anonymous"></script>
 
 </head>
 <body id="top" ng-app="myApp">
@@ -42,9 +43,9 @@
   <h1><strong>{{jls.name}}</strong></h1>
 
   <a class="icon fa-mobile"><span class="label">Phone</span> {{jls.phone}} </a><br/>
-  <a href="mailto:salvador.rhenz@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span> {{jls
+  <a href="mailto:lawrence.c.salvador@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span> {{jls
     .email}}</a><br/>
-  <!-- <a href={{jls.fbLink}} class="icon fa-file-pdf-o"><span class="label">Resume</span> Resume </a> -->
+  <a class="icon fa-location-dot"><span class="label">Location</span> {{jls.location}} </a><br/>
 </header>
 </div>
 
@@ -68,21 +69,47 @@
     <header class="major">
       <h2>About me</h2>
     </header>
-    <p>John Lawrence Salvador, best known as Lawrence, is an iOS Developer. He started as a Software Engineer
-      after he graduated Information Systems from University of Santo Tomas last 2012 and has collaborated with a lot
-      of talented individual in this industry. He chose to develop iOS Apps first as a hobby and this peaked his interest
-       making it part of his career eversince. Young, versatile, and hungry for new knowledge, Lawrence is inspired to
-        learn and improve his skills as an iOS Developer moving forward. Aside from this, he is also into photography and loves cats.</p>
-      <p> Knowledgable in technologies like Swift, Objective-C, Java, MySQL, JSON, HTML, CSS, Javascript, Git, COBOL. I also use Xcode, Slack, HipChat, Source Tree, Github, Bitbucket, Gerrit,
-      JIRA, Zeplin</p>
+    <p>John Salvador is an iOS Developer for more than 7 years and has 10 years total of experience in software development. He always aims to write highly readable, clean and maintainable code. Adept at technical troubleshooting and anticipating future potential problems. He has a drive to always improve himself and stay in technology trends.</p>
+
+    <div class="row"> 
+      <!-- column 1 -->
+      <div class="column">
+        <ul>
+          <li>Swift</li>
+          <li>Objective-C</li>
+          <li>SwiftUI</li>
+          <li>UIKit</li>
+        </ul>
+      </div>
+
+      <!-- column 2 -->
+      <div class="column">
+        <ul>
+          <li>Storyboards</li>
+          <li>Programmatic Views</li>
+          <li>GIT</li>
+          <li>Unit Testing</li>
+        </ul>
+      </div>
+
+      <!-- column 3 -->
+      <div class="column">
+        <ul>
+          <li>MVC</li>
+          <li>MVVM</li>
+          <li>SOLID Principles</li>
+          <li>Good Team Communication and Collaboration Skills</li>
+        </ul>
+      </div>
+
+    </div>
   </section>
 </div>
 
 <!-- Footer -->
 <footer id="footer" ng-controller="profileController">
   <ul class="icons">
-    <!-- <li><a href={{jls.twitterLink}} class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-    <li><a href={{jls.fbLink}} class="icon fa-facebook"><span class="label">Facebook</span></a></li> -->
+    <li><a href={{jls.twitterLink}} class="icon fa-twitter"><span class="label">Twitter</span></a></li>
     <li><a href={{jls.linkedInLink}} class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
     <li><a href={{jls.stackLink}} class="icon fa-stack-overflow"><span class="label">Linkedin</span></a></li>
   </ul>
