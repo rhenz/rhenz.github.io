@@ -1,116 +1,260 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>rhenzsalvador | Portfolio</title>
-  <link rel="icon" type="image/png" href="images/JLCS-Logo-V1.1.png">
-  <meta charset="utf-8"/>
-  <meta name="p:domain_verify" content="37e503afc4f90341725f57f866a4a7b3"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <!--[if lte IE 8]>
-  <script src="assets/js/ie/custom.js"></script><![endif]-->
-  <link rel="stylesheet" href="assets/css/main.css"/>
-  <!--[if lte IE 8]>
-  <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>John Salvador — iOS & Flutter Developer</title>
+  <meta name="description" content="Portfolio of John Salvador — iOS and Flutter Developer. Selected work, skills, and contact." />
+  <style>
+    :root {
+      --bg: #fff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --accent: #2563eb;
+      --card: #f8fafc;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0f1a;
+        --text: #e5e7eb;
+        --muted: #9ca3af;
+        --border: #1f2937;
+        --accent: #60a5fa;
+        --card: #111827;
+      }
+    }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 400 16px/1.6 system-ui, sans-serif; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 860px; margin: auto; padding: clamp(16px, 4vw, 32px); }
 
+    header { position: sticky; top: 0; background: color-mix(in oklab, var(--bg) 90%, transparent); backdrop-filter: saturate(180%) blur(8px); z-index: 10; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); padding-bottom: 20px; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .avatar { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; border: 1px solid var(--border); }
+    .pill { display: inline-block; font-size: 12px; padding: 2px 8px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); }
 
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.poptrox.min.js"></script>
-  <script src="assets/js/skel.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <!--[if lte IE 8]>
-  <script src="assets/js/ie/respond.min.js"></script><![endif]-->
-  <script src="assets/js/main.js"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script> -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
-  <script type="text/javascript" src="app/main.js"></script>
-  <script src="https://kit.fontawesome.com/b3c6583322.js" crossorigin="anonymous"></script>
+    nav { display: flex; gap: 10px; align-items: center; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 8px 12px; border-radius: 999px; border: 1px solid var(--border); font-weight: 600; font-size: 14px; line-height: 1; transition: transform .15s ease, box-shadow .15s ease, background-color .2s ease, color .2s ease, border-color .2s ease; color: inherit; }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,0,0,.08); text-decoration: none; }
+    .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .btn-outline { background: transparent; color: var(--text); }
+    .btn-outline:hover { border-color: color-mix(in oklab, var(--accent) 40%, var(--border)); }
+    .btn-solid { background: var(--accent); color: white; border-color: var(--accent); }
+    .btn-solid:hover { filter: brightness(1.05); }
 
+    .hero { margin-top: 40px; }
+    .hero h1 { font-size: clamp(28px, 6vw, 44px); margin: 0; letter-spacing: -0.02em; }
+    .hero p { color: var(--muted); margin: 8px 0 0; }
+
+    .grid { display: grid; gap: 24px; margin-top: 20px; grid-template-columns: 1fr; }
+    @media (min-width:720px){
+      .grid{grid-template-columns:repeat(2,1fr); align-items:start;}
+    }
+    .card { display: block; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px; transition: transform .15s ease, box-shadow .15s ease; height: 100%; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(0,0,0,.08); }
+    .card h3 { margin: 8px 0; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); }
+    .thumb { width: 100%; height: auto; border-radius: 8px; display:block; margin-bottom:10px; }
+
+    section { margin-top: 40px; scroll-margin-top: 96px; }
+    section h2 { text-transform: uppercase; font-size: 14px; color: var(--muted); letter-spacing: 1.5px; margin-bottom: 12px; }
+
+    .skills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skill { border: 1px solid var(--border); border-radius: 20px; padding: 4px 10px; font-size: 14px; color: var(--muted); }
+
+    footer { border-top: 1px solid var(--border); padding-top: 20px; margin-top: 40px; color: var(--muted); font-size: 14px; }
+  </style>
 </head>
-<body id="top" ng-app="myApp">
-
-<!-- Header -->
-<div ng-controller='profileController'>
-<header id="header" ng-controller="profileController">
-  <a class="image avatar"><img src="images/rhenz.jpg" alt=""/></a>
-
-  <h1><strong>{{jls.name}}</strong></h1>
-
-  <a class="icon fa-mobile"><span class="label">Phone</span> {{jls.phone}} </a><br/>
-  <a href="mailto:lawrence.c.salvador@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span> {{jls
-    .email}}</a><br/>
-  <a class="icon fa-location-dot"><span class="label">Location</span> {{jls.location}} </a><br/>
-</header>
-</div>
-
-<!-- Main -->
-<div id="main">
-
-  <!-- One -->
-  <section id="One" ng-controller="projectController">
-    <h2>Recent Works</h2>
-    <div class="row">
-      <article class={{project.position}} ng-repeat="project in projects">
-        <a href={{project.link}} class="image fit thumb"><img src={{project.image_path}} alt=""/></a>
-        <h3>{{project.title}}</h3>
-        <p>{{project.description}}</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- Two -->
-  <section id="two">
-    <header class="major">
-      <h2>About me</h2>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img src="images/rhenz.jpg" alt="John Salvador" class="avatar">
+        <div>
+          <h1>John Salvador</h1>
+          <div class="pill">iOS Developer</div>
+          <div class="pill">Flutter Developer</div>
+          <div class="pill">AI Tools Power User</div>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <a class="btn btn-outline" href="#work">Work</a>
+        <a class="btn btn-outline" href="#about">About</a>
+        <a class="btn btn-solid" href="#contact">Contact</a>
+      </nav>
     </header>
-    <p>John Salvador is an iOS Developer for more than 7 years and has 10 years total of experience in software development. He always aims to write highly readable, clean and maintainable code. Adept at technical troubleshooting and anticipating future potential problems. He has a drive to always improve himself and stay in technology trends.</p>
 
-    <div class="row"> 
-      <!-- column 1 -->
-      <div class="column">
-        <ul>
-          <li>Swift</li>
-          <li>Objective-C</li>
-          <li>SwiftUI</li>
-          <li>UIKit</li>
-          <li>MVC</li>
-          <li>MVVM</li>
-        </ul>
+    <section class="hero">
+      <h1>Building high-quality, maintainable iOS and Flutter apps.</h1>
+      <p>13+ years in software development, 11+ years in iOS, and 2+ years in Flutter (BLoC) — leveraging AI tools like ChatGPT, Claude Code, and Cursor to deliver faster, higher‑quality results.</p>
+    </section>
+
+    <section id="work">
+      <h2>Selected Work</h2>
+      <div class="grid" id="projects-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>John Salvador is an iOS and Flutter Developer with 13+ years in software development, 11+ years in iOS, and 2+ years in Flutter (BLoC). Passionate about clean, maintainable code, skilled in troubleshooting, and driven to keep improving and staying on top of tech trends. Experienced with AI tools such as ChatGPT, Claude Code, and Cursor.</p>
+      <div class="skills">
+        <span class="skill">Swift</span>
+        <span class="skill">Objective-C</span>
+        <span class="skill">SwiftUI</span>
+        <span class="skill">UIKit</span>
+        <span class="skill">MVC</span>
+        <span class="skill">MVVM</span>
+        <span class="skill">Storyboards</span>
+        <span class="skill">Programmatic Views</span>
+        <span class="skill">GIT</span>
+        <span class="skill">Unit Testing</span>
+        <span class="skill">SOLID Principles</span>
+        <span class="skill">Team Collaboration</span>
+        <span class="skill">Flutter</span>
+        <span class="skill">Flutter BLoC</span>
+        <span class="skill">ChatGPT</span>
+        <span class="skill">Claude Code</span>
+        <span class="skill">Cursor</span>
       </div>
+    </section>
 
-      <!-- column 2 -->
-      <div class="column">
-        <ul>
-          <li>Storyboards</li>
-          <li>Programmatic Views</li>
-          <li>GIT</li>
-          <li>Unit Testing</li>
-          <li>SOLID Principles</li>
-          <li>Good Team Communication and Collaboration Skills</li>
-        </ul>
-      </div>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:lawrence.c.salvador@gmail.com">lawrence.c.salvador@gmail.com</a></p>
+      <p>Location: Philippines / Singapore</p>
+      <p><a href="https://twitter.com/rhenzsalvador" target="_blank" rel="noopener">Twitter</a> | <a href="https://www.linkedin.com/in/jlcsalvador" target="_blank" rel="noopener">LinkedIn</a></p>
+    </section>
 
-    </div>
-  </section>
-</div>
+    <footer>
+      <p>© <span id="year"></span> John Salvador</p>
+    </footer>
+  </div>
 
-<!-- Footer -->
-<footer id="footer" ng-controller="profileController">
-  <ul class="icons">
-    <li><a href={{jls.twitterLink}} class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-    <li><a href={{jls.linkedInLink}} class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-  </ul>
-  <ul class="copyright">
-    <li>&copy; {{jls.username}}</li>
-  </ul>
-</footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
 
+    // Embedded projects data for local development
+    const projectsData = [
+      {
+        "id": 1,
+        "title": "SXFI App",
+        "description": "Personalized spatial audio experience featuring camera‑based head and ear mapping, local music playback, and Bluetooth Low Energy device management for supported Creative devices.",
+        "image_path": "images/thumbs/sxfi-app.png",
+        "link": "https://apps.apple.com/us/app/sxfi-app/id1323992913"
+      },
+      {
+        "id": 2,
+        "title": "GMovies",
+        "description": "Nationwide movie ticketing for the Philippines. Browse schedules, view seat maps, and securely book tickets across 100+ cinema partners including Ayala Malls, SM Cinema, Robinsons, and more.",
+        "image_path": "images/thumbs/gmovies.png",
+        "link": "https://itunes.apple.com/ph/app/gmovies-tickets-schedule/id582901861?mt=8"
+      },
+      {
+        "id": 3,
+        "title": "Streamwatch",
+        "description": "Full‑featured mobile remote for Roku‑powered Streamwatch devices, providing convenient navigation and device controls from your phone.",
+        "image_path": "images/thumbs/streamwatch.png",
+        "link": "https://itunes.apple.com/ph/app/globe-streamwatch/id1265052218?mt=8"
+      },
+      {
+        "id": 4,
+        "title": "Pushpyns",
+        "description": "Location bookmarking app to save, organize, and annotate places with names, categories, notes, descriptions, photos, and date/time metadata.",
+        "image_path": "images/thumbs/pushpyns.png",
+        "link": "https://pushpyns.com/home"
+      },
+      {
+        "id": 5,
+        "title": "VGTC Timesheets",
+        "description": "Digital timesheet solution enabling apprentices and hosts to complete, approve, and submit weekly timesheets, lodge leave requests, view pay history, and communicate within one streamlined workflow.",
+        "image_path": "images/thumbs/vgtc.png",
+        "link": "https://itunes.apple.com/au/app/vgtc-timesheets/id1100580191?mt=8"
+      },
+      {
+        "id": 6,
+        "title": "iPDS",
+        "description": "iOS client for Productivity Development Solutions providing real‑time asset management and inspections, including modules for Asset Management, Inspections, Idler Management, Wear Management, and Complex Mapping.",
+        "image_path": "images/thumbs/ipds.png",
+        "link": "https://itunes.apple.com/us/app/ipds-enterprise-in-field-inspection/id1088070458?mt=8"
+      },
+      {
+        "id": 7,
+        "title": "Booko Buddy",
+        "description": "Companion to the Booko price comparison engine that finds the best total price (including delivery) for books, DVDs, and Blu‑ray across multiple international regions; optimized iPad experience.",
+        "image_path": "images/thumbs/bookobuddy.png",
+        "link": "https://itunes.apple.com/au/app/booko-buddy/id521096621?mt=8"
+      },
+      {
+        "id": 8,
+        "title": "Butterfly Kidz",
+        "description": "Educational app designed to build self‑confidence and a growth mindset in children through guided content and activities.",
+        "image_path": "images/thumbs/butterflykidz.png",
+        "link": "http://butterflykidz.com"
+      },
+      {
+        "id": 9,
+        "title": "Biom' Up",
+        "description": "Secure companion app providing authorized users with up‑to‑date access to Biom' Up product information and resources.",
+        "image_path": "images/thumbs/biomup.png",
+        "link": "https://itunes.apple.com/us/app/biom-up/id1135365405?mt=8"
+      },
+      {
+        "id": 10,
+        "title": "Bonafide Infotech",
+        "description": "Company profile app offering an overview of Bonafide Infotech's services, capabilities, and contact information.",
+        "image_path": "images/thumbs/bonafide.png",
+        "link": "https://sensortower.com/ios/tr/bonafide-infotech/app/bonafide-infotech-inc/924799024/"
+      },
+      {
+        "id": 11,
+        "title": "WMS Patient Order App",
+        "description": "Mobile workflow for referral communities to capture and transmit essential catheterization information. Data is securely processed to generate pre‑populated prescription forms for physician review and signature.",
+        "image_path": "images/thumbs/wms.png",
+        "link": "https://sensortower.com/ios/us/wilmington-medical-supply-inc/app/wms-patient-order-app/930807108/"
+      },
+      {
+        "id": 12,
+        "title": "SportsAce",
+        "description": "Community app for rugby coaches, parents, and players to track and record game scores, share activity, and create challenges—combining scorekeeping with social features.",
+        "image_path": "images/thumbs/sportsace.png",
+        "link": "images/thumbs/sportsaceapp.png"
+      }
+    ];
 
+    async function renderProjects() {
+      try {
+        let projects = projectsData; // Use embedded data by default
+        
+        // Try to load external JSON for production (will fail locally but work on web server)
+        try {
+          const response = await fetch('assets/data/projects.json', { cache: 'no-store' });
+          if (response.ok) {
+            projects = await response.json();
+          }
+        } catch (fetchError) {
+          // Silently fall back to embedded data if fetch fails
+          console.log('Using embedded project data (external JSON not available)');
+        }
+        
+        const grid = document.getElementById('projects-grid');
+        grid.innerHTML = projects.map(p => `
+          <a class="card" href="${p.link}" target="_blank" rel="noopener noreferrer">
+            <img src="${p.image_path}" alt="${p.title}" class="thumb" />
+            <h3>${p.title} →</h3>
+            <p>${p.description}</p>
+          </a>
+        `).join('');
+      } catch (e) {
+        const grid = document.getElementById('projects-grid');
+        grid.innerHTML = '<p class="pill">Unable to load projects right now.</p>';
+        console.error(e);
+      }
+    }
+
+    renderProjects();
+  </script>
+  
 </body>
 </html>

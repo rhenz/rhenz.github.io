@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "title": "SXFI App",
+    "description": "Personalized spatial audio experience featuring camera‑based head and ear mapping, local music playback, and Bluetooth Low Energy device management for supported Creative devices.",
+    "image_path": "images/thumbs/sxfi-app.png",
+    "link": "https://apps.apple.com/us/app/sxfi-app/id1323992913"
+  },
+  {
+    "id": 2,
+    "title": "GMovies",
+    "description": "Nationwide movie ticketing for the Philippines. Browse schedules, view seat maps, and securely book tickets across 100+ cinema partners including Ayala Malls, SM Cinema, Robinsons, and more.",
+    "image_path": "images/thumbs/gmovies.png",
+    "link": "https://itunes.apple.com/ph/app/gmovies-tickets-schedule/id582901861?mt=8"
+  },
+  {
+    "id": 3,
+    "title": "Streamwatch",
+    "description": "Full‑featured mobile remote for Roku‑powered Streamwatch devices, providing convenient navigation and device controls from your phone.",
+    "image_path": "images/thumbs/streamwatch.png",
+    "link": "https://itunes.apple.com/ph/app/globe-streamwatch/id1265052218?mt=8"
+  },
+  {
+    "id": 4,
+    "title": "Pushpyns",
+    "description": "Location bookmarking app to save, organize, and annotate places with names, categories, notes, descriptions, photos, and date/time metadata.",
+    "image_path": "images/thumbs/pushpyns.png",
+    "link": "https://pushpyns.com/home"
+  },
+  {
+    "id": 5,
+    "title": "VGTC Timesheets",
+    "description": "Digital timesheet solution enabling apprentices and hosts to complete, approve, and submit weekly timesheets, lodge leave requests, view pay history, and communicate within one streamlined workflow.",
+    "image_path": "images/thumbs/vgtc.png",
+    "link": "https://itunes.apple.com/au/app/vgtc-timesheets/id1100580191?mt=8"
+  },
+  {
+    "id": 6,
+    "title": "iPDS",
+    "description": "iOS client for Productivity Development Solutions providing real‑time asset management and inspections, including modules for Asset Management, Inspections, Idler Management, Wear Management, and Complex Mapping.",
+    "image_path": "images/thumbs/ipds.png",
+    "link": "https://itunes.apple.com/us/app/ipds-enterprise-in-field-inspection/id1088070458?mt=8"
+  },
+  {
+    "id": 7,
+    "title": "Booko Buddy",
+    "description": "Companion to the Booko price comparison engine that finds the best total price (including delivery) for books, DVDs, and Blu‑ray across multiple international regions; optimized iPad experience.",
+    "image_path": "images/thumbs/bookobuddy.png",
+    "link": "https://itunes.apple.com/au/app/booko-buddy/id521096621?mt=8"
+  },
+  {
+    "id": 8,
+    "title": "Butterfly Kidz",
+    "description": "Educational app designed to build self‑confidence and a growth mindset in children through guided content and activities.",
+    "image_path": "images/thumbs/butterflykidz.png",
+    "link": "http://butterflykidz.com"
+  },
+  {
+    "id": 9,
+    "title": "Biom' Up",
+    "description": "Secure companion app providing authorized users with up‑to‑date access to Biom' Up product information and resources.",
+    "image_path": "images/thumbs/biomup.png",
+    "link": "https://itunes.apple.com/us/app/biom-up/id1135365405?mt=8"
+  },
+  {
+    "id": 10,
+    "title": "Bonafide Infotech",
+    "description": "Company profile app offering an overview of Bonafide Infotech's services, capabilities, and contact information.",
+    "image_path": "images/thumbs/bonafide.png",
+    "link": "https://sensortower.com/ios/tr/bonafide-infotech-inc/app/bonafide-infotech-inc/924799024/"
+  },
+  {
+    "id": 11,
+    "title": "WMS Patient Order App",
+    "description": "Mobile workflow for referral communities to capture and transmit essential catheterization information. Data is securely processed to generate pre‑populated prescription forms for physician review and signature.",
+    "image_path": "images/thumbs/wms.png",
+    "link": "https://sensortower.com/ios/us/wilmington-medical-supply-inc/app/wms-patient-order-app/930807108/"
+  },
+  {
+    "id": 12,
+    "title": "SportsAce",
+    "description": "Community app for rugby coaches, parents, and players to track and record game scores, share activity, and create challenges—combining scorekeeping with social features.",
+    "image_path": "images/thumbs/sportsace.png",
+    "link": "images/thumbs/sportsaceapp.png"
+  }
+]
+
